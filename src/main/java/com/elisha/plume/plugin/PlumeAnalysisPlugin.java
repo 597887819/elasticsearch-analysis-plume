@@ -19,14 +19,12 @@ import com.elisha.plume.index.PlumeTokenizerFactory;
  */
 public class PlumeAnalysisPlugin extends Plugin implements AnalysisPlugin {
 
-    // todo 改为自己的插件名字所在目录
     public static final String PLUGIN_NAME = "plume";
 
     @Override
     public Map<String, AnalysisModule.AnalysisProvider<TokenizerFactory>> getTokenizers() {
         Map<String, AnalysisModule.AnalysisProvider<TokenizerFactory>> extra = new HashMap<>();
 
-        // todo 改为自己的分词器名字
 //        for (AnalyzerTypeEnum typeEnum : AnalyzerTypeEnum.values()) {
 //            extra.put(typeEnum.getCode(), PlumeTokenizerFactory::getTokenizerFactory);
 //        }
@@ -38,7 +36,6 @@ public class PlumeAnalysisPlugin extends Plugin implements AnalysisPlugin {
     public Map<String, AnalysisModule.AnalysisProvider<AnalyzerProvider<? extends Analyzer>>> getAnalyzers() {
         Map<String, AnalysisModule.AnalysisProvider<AnalyzerProvider<? extends Analyzer>>> extra = new HashMap<>();
 
-        // todo 改为自己的分词器名字
 //        for (AnalyzerTypeEnum typeEnum : AnalyzerTypeEnum.values()) {
 //            extra.put(typeEnum.getCode(), PlumeAnalyzerProvider::getAnalyzerProvider);
 //        }
